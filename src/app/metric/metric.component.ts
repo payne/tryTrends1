@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-metric',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./metric.component.scss']
 })
 export class MetricComponent implements OnInit {
+  @Input('name') name = 'ST';
 
   constructor() { }
 
