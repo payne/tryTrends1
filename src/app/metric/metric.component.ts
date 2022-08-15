@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MetricComponent implements OnInit {
   @Input('name') name = 'ST';
   @Input('data') data: number[]=[1,2,3,4,5,6,7,8,9];
+  @Input('value') value = '42.42';
 
   constructor() { }
 
