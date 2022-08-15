@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { TrendModule } from 'ngx-trend';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MetricComponent } from './metric/metric.component';
@@ -12,6 +16,7 @@ import { MetricComponent } from './metric/metric.component';
   ],
   imports: [
     BrowserModule,
+    TrendModule,BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
